@@ -89,10 +89,10 @@ header {
   .article-list article {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     position: relative;
-    min-height: 300px;
     border-radius: 5px;
     cursor: pointer;
-    transition: .3s; }
+    transition: .3s;
+    height: 550px; }
     .article-list article:hover {
       transform: translateY(-5px); }
     .article-list article h1 {
@@ -116,9 +116,20 @@ header {
         width: 100%;
         height: 100%;
         border-radius: 5px 5px 0 0; }
-    .article-list article p {
+    .article-list article .content {
       line-height: 30px;
-      padding: 1rem; }
+      padding: 1rem;
+      /* Boutton */ }
+      .article-list article .content p {
+        margin-bottom: 1rem; }
+      .article-list article .content .boutton {
+        background-color: #1a1717;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        position: absolute;
+        bottom: 15px;
+        text-transform: capitalize; }
     .article-list article #media1 {
       background: url("../imgs/med1.png") no-repeat center center/cover; }
     .article-list article #media2 {

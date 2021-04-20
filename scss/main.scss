@@ -116,10 +116,10 @@ header {
         
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         position: relative;
-        min-height: 300px;
         border-radius: 5px;
         cursor: pointer;
         transition: .3s;
+        height: 550px;
 
         &:hover {
             transform: translateY(-5px);
@@ -136,6 +136,7 @@ header {
             transform: translateX(-50%)
             
         }
+
         .article-bg {
             height:250px ;
             position: relative;
@@ -151,10 +152,26 @@ header {
                 
             }
         }
-        p {
+      .content {
+            
             line-height: 30px;
             padding: 1rem;
+            p {
+                margin-bottom: 1rem;
+            }
+         /* Boutton */
+
+        .boutton{
+            background-color: rgb(26, 23, 23);
+            border-radius: 5px;
+            color: white;
+            padding:10px;
+            position: absolute;
+            bottom: 15px;
+            text-transform: capitalize;
         }
+      }
+
         #media1 {
             background: url('../imgs/med1.png') no-repeat center center/cover;
             
