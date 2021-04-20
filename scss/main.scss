@@ -42,6 +42,7 @@ header {
                 color: white;
                 display: inline-block;
                 margin-right: 2rem;
+                margin-bottom: 1rem;
                 text-transform: capitalize;
                 font-weight: bold;
                 position: relative;
@@ -150,7 +151,10 @@ header {
                 
             }
         }
-
+        p {
+            line-height: 30px;
+            padding: 1rem;
+        }
         #media1 {
             background: url('../imgs/med1.png') no-repeat center center/cover;
             
@@ -191,9 +195,16 @@ header {
             background: url('../imgs/med10.png') no-repeat center center/cover;
             
         }
-        p {
+       
+    }
+}
+
+
+footer {
+     p {
             padding: 1.5rem;
             line-height: 30px;
-        }
+            font-size: 12px;
+            text-align: center;
     }
 }

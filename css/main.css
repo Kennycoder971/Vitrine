@@ -43,6 +43,7 @@ header {
       color: white;
       display: inline-block;
       margin-right: 2rem;
+      margin-bottom: 1rem;
       text-transform: capitalize;
       font-weight: bold;
       position: relative; }
@@ -115,6 +116,9 @@ header {
         width: 100%;
         height: 100%;
         border-radius: 5px 5px 0 0; }
+    .article-list article p {
+      line-height: 30px;
+      padding: 1rem; }
     .article-list article #media1 {
       background: url("../imgs/med1.png") no-repeat center center/cover; }
     .article-list article #media2 {
@@ -135,6 +139,9 @@ header {
       background: url("../imgs/med9.png") no-repeat center center/cover; }
     .article-list article #media10 {
       background: url("../imgs/med10.png") no-repeat center center/cover; }
-    .article-list article p {
-      padding: 1.5rem;
-      line-height: 30px; }
+
+footer p {
+  padding: 1.5rem;
+  line-height: 30px;
+  font-size: 12px;
+  text-align: center; }
