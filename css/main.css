@@ -42,10 +42,99 @@ header {
     header #navigation li a {
       color: white;
       display: inline-block;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      text-transform: capitalize;
+      font-weight: bold;
+      position: relative; }
+      header #navigation li a:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        transition: .5s;
+        background-color: white;
+        transform: scale(0); }
+      header #navigation li a:hover:after {
+        transform: scale(1); }
+    header #navigation form div {
+      display: flex; }
+      header #navigation form div input {
+        padding: .3rem;
+        border: 0;
+        border-radius: 15px 0 0 15px;
+        outline: none; }
+      header #navigation form div button {
+        border: 0;
+        background-color: white;
+        border-radius: 0 15px 15px 0;
+        cursor: pointer; }
+        header #navigation form div button .fas {
+          padding: .5rem; }
   header .titre-site {
     text-align: center;
     margin-top: 15rem;
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 3px;
     text-transform: uppercase; }
+
+.article-list {
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  position: relative; }
+  .article-list article {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+    min-height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s; }
+    .article-list article:hover {
+      transform: translateY(-5px); }
+    .article-list article h1 {
+      font-size: 1.3rem;
+      position: absolute;
+      text-align: center;
+      top: 15%;
+      color: white;
+      z-index: 1;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%); }
+    .article-list article .article-bg {
+      height: 250px;
+      position: relative;
+      border-radius: 5px 5px 0 0; }
+      .article-list article .article-bg::before {
+        background-color: rgba(0, 0, 0, 0.6);
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0 0; }
+    .article-list article #media1 {
+      background: url("../imgs/med1.png") no-repeat center center/cover; }
+    .article-list article #media2 {
+      background: url("../imgs/med2.png") no-repeat center center/cover; }
+    .article-list article #media3 {
+      background: url("../imgs/med3.png") no-repeat center center/cover; }
+    .article-list article #media4 {
+      background: url("../imgs/med4.png") no-repeat center center/cover; }
+    .article-list article #media5 {
+      background: url("../imgs/med5.png") no-repeat center center/cover; }
+    .article-list article #media6 {
+      background: url("../imgs/med6.png") no-repeat center center/cover; }
+    .article-list article #media7 {
+      background: url("../imgs/med7.png") no-repeat center center/cover; }
+    .article-list article #media8 {
+      background: url("../imgs/med8.png") no-repeat center center/cover; }
+    .article-list article #media9 {
+      background: url("../imgs/med9.png") no-repeat center center/cover; }
+    .article-list article #media10 {
+      background: url("../imgs/med10.png") no-repeat center center/cover; }
+    .article-list article p {
+      padding: 1.5rem;
+      line-height: 30px; }
